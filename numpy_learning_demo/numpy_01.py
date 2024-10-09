@@ -19,8 +19,10 @@ array_range = np.arange(10)
 print(array_range)
 
 # 使用 np.zeros() 和 np.ones() 创建全零或全一数组
+# 两行三列
 array_zero = np.zeros((2, 3))
 print(array_zero)
 
+# 两行三列
 array_one = np.ones((2, 3))
 print(array_one)

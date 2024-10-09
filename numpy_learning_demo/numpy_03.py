@@ -23,9 +23,11 @@ print("访问第一行第二个元素:", array_2d[0, 1])  # 输出: 2
 使用切片操作从数组中提取子数组。
 """
 # 提取一维数组的子数组
+# [step:start:end]
 sub_array_1d = array_1d[1:4]  # 输出: [20, 30, 40]
 print(f"sub_array_1d is {sub_array_1d}")
 # 提取二维数组的子数组
+# [:,1:3] 取所有行的第一列到第三列
 sub_array_2d = array_2d[:, 1:3]  # 输出第二列和第三列的子数组: [[2, 3], [5, 6]]
 print(f"sub_array_2d is {sub_array_2d}")
 
@@ -63,5 +65,7 @@ print("二维数组与一维数组相加:\n", array_3 + array_4)
 # 输出: [[2 2 4], [5 5 7]]
 
 # 初始化数组
+# 0-9的平方数组
+# [ 0  1  4  9 16 25 36 49 64 81]
 array_4 = np.array([i ** 2 for i in range(10)])
 print(array_4)
